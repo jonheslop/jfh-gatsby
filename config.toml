@@ -1,6 +1,6 @@
-siteTitle = "Blog by John Doe"
+siteTitle = "Jon Heslop"
 siteDescr = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-siteAuthor = "John Doe"
+siteAuthor = "Jon Heslop"
 
 siteTelegramUrl = "#"
 siteTwitterUrl = "#"
@@ -11,4 +11,4 @@ siteVkUrl = "#"
 
 googleAnalyticsId = ""
 
-linkPrefix = "/gatsby-starter-lumen"
+linkPrefix = "/"
