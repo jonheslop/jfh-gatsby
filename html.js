@@ -28,7 +28,7 @@ module.exports = React.createClass({
               { font }
               { css }
             </head>
-            <body className="green bg-washed-blue athelas">
+            <body className="green bg-washed-blue athelas relative">
               <div id="react-mount" dangerouslySetInnerHTML={ {    __html: this.props.body} } />
               <script src={ prefixLink(`/bundle.js?t=${BUILD_TIME}`) } />
             </body>

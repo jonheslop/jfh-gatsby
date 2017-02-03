@@ -6,7 +6,7 @@ class SiteNav extends React.Component {
     render() {
         const {location} = this.props
         return (
-            <nav className='dt w-100 border-box pa3 ph5-ns fixed' style={{zIndex: 999}}>
+            <nav className='dt w-100 border-box pa3 ph5-ns absolute top-0' style={{zIndex: 999}}>
                 <Link to={ prefixLink('/')} className='dtc v-mid mid-gray link dim w-25' title='Home' activeClassName='current' onlyActiveOnIndex>
                     <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 682.17 682.18'  className='dib w3 h3 br-100' >
                       <title>jfh-logo</title>
