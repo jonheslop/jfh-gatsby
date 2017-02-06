@@ -9,6 +9,7 @@ import { config } from 'config'
 import SiteNav from '../components/SiteNav'
 import Banner from '../components/Banner'
 import SitePost from '../components/SitePost'
+import SiteFooter from '../components/SiteFooter'
 
 class SiteIndex extends React.Component {
     render() {
@@ -34,10 +35,10 @@ class SiteIndex extends React.Component {
                         <div className='project-timeline-block-brand absolute top-0 left-0'>
                           <img src={ postPath + logo } className={`dib border-box w3 h3 w4-ns h4-ns br-100 bg-${ bg } ba bw4 b--${ bg }`} alt='Rapha&reg;' />
                         </div>
-                        <div className='fr w-100 lh-copy pl6 pl7-ns pr3 pr6-l relative'>
-                            <h2 className='ma0'><Link className='link green hover-navy' to={ prefixLink(page.path) } > { title }, <span className="fw4">{ period }</span> </Link></h2>
-                          <p className="f4 measure" dangerouslySetInnerHTML={ {    __html: description} } />
-                          <Link className='f4 i link green hover-navy bb' to={ prefixLink(page.path) }> Learn more
+                        <div className='fr w-100 lh-copy pl5 pl7-ns pr6-l relative'>
+                            <h2 className='ma0 f4 f3-ns pl3 pl0-ns'><Link className='link green hover-navy' to={ prefixLink(page.path) } > { title }, <span className="fw4">{ period }</span> </Link></h2>
+                          <p className="f4-ns measure" dangerouslySetInnerHTML={ {    __html: description} } />
+                          <Link className='f4-ns i link green hover-navy bb' to={ prefixLink(page.path) }> Learn more
                           </Link>
                         </div>
                     </div>
@@ -55,10 +56,11 @@ class SiteIndex extends React.Component {
                     ''
                 }
               <main role='main' className='ph3 ph5-ns cf'>
-                  <section className='project-timeline--brands relative pa3 mv6'>
+                  <section className='project-timeline--brands relative pt5 mt5 pa3-ns mb6'>
                     { pageLinks }
                   </section>
             </main>
+            <SiteFooter {...this.props}/>
             </div>
               )
     }

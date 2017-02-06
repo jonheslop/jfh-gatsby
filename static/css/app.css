@@ -89,12 +89,16 @@
   content: '';
   position: absolute;
   top: 0;
-  left: 3rem;
+  left: 2rem;
   height: 100%;
   width: .125rem;
   background: #19a974;
   opacity: .25;
   margin-left: -.0625em;
+}
+
+.project-timeline-block-brand {
+  top: -1em;
 }
 
 .project-timeline-block-brand img {
@@ -111,6 +115,7 @@
   }
 
   .project-timeline-block-brand {
+    top: 0;
     left: 4rem;
   }
 }
