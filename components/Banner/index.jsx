@@ -13,11 +13,9 @@ class Banner extends React.Component {
               }}>
               <div className='dtc v-mid ph5'>
                 <h1 className='f1 f-headline-l fw1 white-90 mw6'>{ config.siteHeadline }</h1>
-                <blockquote className='ph0 mh0 measure-narrow f2 lh-copy i'>
-                  <p className='white-90 i'>
+                <p className='ph0 mh0 measure-narrow f2 lh-copy i white-90'>
                     { config.siteDescr }
-                  </p>
-                </blockquote>
+              </p>
             </div>
         </div>
             );

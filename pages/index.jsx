@@ -21,10 +21,11 @@ class SiteIndex extends React.Component {
         ).reverse()
         sortedPages.forEach((page) => {
             if (access(page, 'file.ext') === 'md' && access(page, 'data.layout') === 'post') {
-                const title = access(page, 'data.title') || page.path
+                const company = access(page, 'data.company') || page.path
                 const period = access(page, 'data.period')
                 const description = access(page, 'data.description')
                 const datePublished = access(page, 'data.date')
+                const title = access(page, 'data.title') || page.path
                 const category = access(page, 'data.category')
                 const logo = access(page, 'data.logo')
                 const postPath = access(page, 'data.path')
@@ -36,7 +37,7 @@ class SiteIndex extends React.Component {
                           <img src={ postPath + logo } className={`dib border-box w3 h3 w4-ns h4-ns br-100 bg-${ bg } ba bw4 b--${ bg }`} alt='Rapha&reg;' />
                         </div>
                         <div className='fr w-100 lh-copy pl5 pl7-ns pr6-l relative'>
-                            <h2 className='ma0 f4 f3-ns pl3 pl0-ns'><Link className='link green hover-navy' to={ prefixLink(page.path) } > { title }, <span className="fw4">{ period }</span> </Link></h2>
+                            <h2 className='ma0 f4 f3-ns pl3 pl0-ns'><Link className='link green hover-navy' to={ prefixLink(page.path) } > { company }, <span className="fw4">{ period }</span> </Link></h2>
                           <p className="f4-ns measure" dangerouslySetInnerHTML={ {    __html: description} } />
                           <Link className='f4-ns i link green hover-navy bb' to={ prefixLink(page.path) }> Learn more
                           </Link>

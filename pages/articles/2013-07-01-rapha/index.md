@@ -1,9 +1,10 @@
 ---
-title: "Rapha"
+company: "Rapha"
 date: "2013-07-01T22:12:03.284Z"
 layout: post
 period: "2013 - 2016"
 path: "/rapha/"
+title: Front end developer and designer
 category: "Typography TESTS"
 description: "German inventor Johannes Gutenberg developed a method of movable type and used it to create one of the western world’s first major printed books, the “Forty–Two–Line” Bible."
 logo: "./rapha.svg"

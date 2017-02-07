@@ -1,10 +1,11 @@
 ---
-title: Do Lectures
+company: Do Lectures
 date: "2010-05-01T22:40:32.169Z"
 layout: post
 period: "2010 - 2013"
 path: "/do-lectures/"
 category: "FrontEnd"
+title: Freelance web designer/developer
 description: "Employment, gender, breakthrough insights carbon emissions reductions peaceful, sharing economy Angelina Jolie accelerate, inclusive capitalism research inspire social change social good informal economies minority. John Lennon; leverage maximize, assistance, lifting people up disruption gender equality best practices."
 logo: "./dolectures.svg"
 logoBG: "white"

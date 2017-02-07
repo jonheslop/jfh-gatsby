@@ -1,9 +1,10 @@
 ---
-title: Hiut Denim
+company: Hiut Denim
 date: "2011-04-01T23:46:37.121Z"
 layout: post
 period: "2011 - 2013"
 path: "/hiut-denim/"
+title: Front end developer
 category: "FrontEnd"
 description: "Civil society; save lives pathway to a better life public-private partnerships solution, tackle, protect UNHCR social movement Jane Addams sustainable campaign respond equality."
 logo: "./hiutdenim.svg"

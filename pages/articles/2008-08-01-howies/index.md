@@ -1,10 +1,11 @@
 ---
-title: howies
+company: howies
 date: "2008-08-01T23:46:37.121Z"
 layout: post
 period: "2008 - 2010"
 path: "/howies/"
 category: "FrontEnd"
+title: "Head of Web"
 description: "Civil society; save lives pathway to a better life public-private partnerships solution, tackle, protect UNHCR social movement Jane Addams sustainable campaign respond equality."
 logo: "./howies.svg"
 logoBG: "white"
