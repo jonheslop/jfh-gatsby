@@ -3,7 +3,6 @@ import { Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
 
-import '../static/css/tachyons.css'
 import '../static/css/app.css'
 
 class Template extends React.Component {

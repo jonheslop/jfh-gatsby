@@ -49,7 +49,17 @@ class SiteIndex extends React.Component {
 
         return (
             <div>
-              <Helmet title={ config.siteTitle }/>
+              <Helmet
+                  title={ config.siteTitle }
+                  meta={[
+                      { name: 'description', content: config.siteDescr },
+                      { property: 'og:description', content: config.siteDescr },
+                      { property: 'og:title', content: config.siteTitle },
+                      { property: 'og:description', content: config.siteDescr },
+                      { property: 'og:type', content: 'website' },
+                      { property: 'og:image', content: config.siteImage }
+                  ]}
+              />
               <SiteNav {...this.props}/>
                 { isHome ? (
                     <Banner/>
