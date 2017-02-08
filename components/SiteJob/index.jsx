@@ -4,7 +4,6 @@ import { RouteHandler, Link } from 'react-router'
 import { prefixLink } from 'gatsby-helpers'
 import access from 'safe-access'
 import { config } from 'config'
-import '../../static/css/highlight.css'
 
 class SitePost extends React.Component {
     render() {
@@ -29,7 +28,6 @@ class SitePost extends React.Component {
                   </div>
                 </div>
                 <div className='footer'>
-                  <ReadNext post={ post } {...this.props}/>
                   <hr></hr>
                   <p>
                     { config.siteDescr }
