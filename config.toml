@@ -3,13 +3,6 @@ siteHeadline = "I make things for the internet"
 siteDescr = "Jon Heslop is a designer & developer based in London."
 siteAuthor = "Jon Heslop"
 
-siteTelegramUrl = "#"
-siteTwitterUrl = "#"
-siteGithubUrl = "#"
-siteEmailUrl = "#"
-siteRssUrl = "#"
-siteVkUrl = "#"
+googleAnalyticsId = "UA-3354664-1"
 
-googleAnalyticsId = ""
-
-linkPrefix = "/"
+linkPrefix = "/jfh-gatsby"

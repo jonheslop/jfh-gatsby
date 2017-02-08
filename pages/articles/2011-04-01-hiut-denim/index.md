@@ -1,7 +1,7 @@
 ---
 company: Hiut Denim
 date: "2011-04-01T23:46:37.121Z"
-layout: post
+layout: job
 period: "2011 - 2013"
 path: "/hiut-denim/"
 title: Front end developer

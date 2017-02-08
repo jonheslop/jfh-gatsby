@@ -1,5 +1,3 @@
-@import "./slick.css";
-@import "./slick-theme.css";
 @import "tachyons";
 
 .paragraph-links a:link, .paragraph-links a:visited {

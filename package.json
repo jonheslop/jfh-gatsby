@@ -1,7 +1,7 @@
 {
-  "version": "1.1.0",
-  "name": "gatsby-starter-lumen",
-  "description": "Simple starter for Gatsby",
+  "version": "0.5.0",
+  "name": "jfh-gatsby",
+  "description": "The personal website of Jon Heslop",
   "main": "n/a",
   "scripts": {
     "develop": "gatsby develop",
@@ -16,10 +16,11 @@
   },
   "keywords": [
     "gatsby",
-    "lumen",
-    "starter"
+    "react",
+    "personal",
+    "portfolio"
   ],
-  "author": "Alexander Shelepenok <a.shelepenok@gmail.com>",
+  "author": "Jon Heslop <jon@jonheslop.com>",
   "license": "MIT",
   "dependencies": {
     "babel-plugin-add-module-exports": "^0.2.1",

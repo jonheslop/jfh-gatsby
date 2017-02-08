@@ -1,7 +1,7 @@
 ---
 company: "Rapha"
 date: "2013-07-01T22:12:03.284Z"
-layout: post
+layout: job
 period: "2013 - 2016"
 path: "/rapha/"
 title: Front end developer and designer

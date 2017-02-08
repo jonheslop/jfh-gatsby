@@ -1,7 +1,7 @@
 ---
 company: howies
 date: "2008-08-01T23:46:37.121Z"
-layout: post
+layout: job
 period: "2008 - 2010"
 path: "/howies/"
 category: "FrontEnd"

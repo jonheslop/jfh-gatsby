@@ -1,7 +1,7 @@
 ---
 company: DigitasLBi
 date: "2016-11-07T23:46:37.121Z"
-layout: post
+layout: job
 period: "2016 - Present"
 path: "/digitaslbi/"
 title: "Senior interface developer on Project Helios"

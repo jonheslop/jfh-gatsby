@@ -1,7 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import SitePost from '../components/SitePost'
-import SitePage from '../components/SitePage'
+import SiteJob from '../components/SiteJob'
 import { config } from 'config'
 
 class MarkdownWrapper extends React.Component {
@@ -12,10 +11,10 @@ class MarkdownWrapper extends React.Component {
 
         layout = post.layout
 
-        if (layout != 'page') {
-            template = <SitePost {...this.props}/>
+        if (layout == 'job') {
+            template = <SiteJob {...this.props}/>
         } else {
-            template = <SitePage {...this.props}/>
+            template = <SiteJob {...this.props}/>
         }
 
         return (

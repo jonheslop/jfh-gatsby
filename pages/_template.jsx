@@ -5,10 +5,6 @@ import { config } from 'config'
 
 import '../static/css/tachyons.css'
 import '../static/css/app.css'
-import '../static/css/slick.css'
-import '../static/css/slick-theme.css'
-import $ from 'jquery';
-import '../static/js/slick.min.js'
 
 class Template extends React.Component {
     render() {

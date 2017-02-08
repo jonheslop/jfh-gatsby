@@ -1,7 +1,7 @@
 ---
 company: Do Lectures
 date: "2010-05-01T22:40:32.169Z"
-layout: post
+layout: job
 period: "2010 - 2013"
 path: "/do-lectures/"
 category: "FrontEnd"

@@ -8,7 +8,7 @@ import access from 'safe-access'
 import { config } from 'config'
 import SiteNav from '../components/SiteNav'
 import Banner from '../components/Banner'
-import SitePost from '../components/SitePost'
+import SiteJob from '../components/SiteJob'
 import SiteFooter from '../components/SiteFooter'
 
 class SiteIndex extends React.Component {
@@ -20,7 +20,7 @@ class SiteIndex extends React.Component {
         const sortedPages = sortBy(this.props.route.pages, (page) => access(page, 'data.date')
         ).reverse()
         sortedPages.forEach((page) => {
-            if (access(page, 'file.ext') === 'md' && access(page, 'data.layout') === 'post') {
+            if (access(page, 'file.ext') === 'md' && access(page, 'data.layout') === 'job') {
                 const company = access(page, 'data.company') || page.path
                 const period = access(page, 'data.period')
                 const description = access(page, 'data.description')
