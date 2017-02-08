@@ -34,7 +34,7 @@ class SiteIndex extends React.Component {
                 pageLinks.push(
                     <div className='project-timeline-block pb3 mb5 relative cf'>
                         <div className='project-timeline-block-brand absolute top-0 left-0'>
-                          <img src={ postPath + logo } className={`dib border-box w3 h3 w4-ns h4-ns br-100 bg-${ bg } ba bw4 b--${ bg }`} alt='Rapha&reg;' />
+                          <img src={ prefixLink(postPath + logo) } className={`dib border-box w3 h3 w4-ns h4-ns br-100 bg-${ bg } ba bw4 b--${ bg }`} alt={`${ company } logo`} />
                         </div>
                         <div className='fr w-100 lh-copy pl5 pl7-ns pr6-l relative'>
                             <h2 className='ma0 f4 f3-ns pl3 pl0-ns'><Link className='link green hover-navy' to={ prefixLink(page.path) } > { company }, <span className="fw4">{ period }</span> </Link></h2>
