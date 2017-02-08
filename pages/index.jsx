@@ -53,7 +53,7 @@ class SiteIndex extends React.Component {
                   title={ config.siteTitle }
                   meta={[
                       { name: 'description', content: config.siteDescr },
-                      { property: 'og:description', content: config.siteDescr },
+                      { property: 'og:url', content: config.siteURL },
                       { property: 'og:title', content: config.siteTitle },
                       { property: 'og:description', content: config.siteDescr },
                       { property: 'og:type', content: 'website' },
