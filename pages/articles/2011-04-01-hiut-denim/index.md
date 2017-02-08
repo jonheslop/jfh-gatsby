@@ -7,7 +7,7 @@ path: "/hiut-denim/"
 title: Front end developer
 category: "FrontEnd"
 description: "Civil society; save lives pathway to a better life public-private partnerships solution, tackle, protect UNHCR social movement Jane Addams sustainable campaign respond equality."
-logo: "./hiutdenim.svg"
+logo: ['./hiutdenim.svg', './dolectures.svg', './howies.svg']
 logoBG: "white"
 ---
 

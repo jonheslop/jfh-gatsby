@@ -1,6 +1,7 @@
 import React from 'react'
 import { RouteHandler, Link } from 'react-router'
 import sortBy from 'lodash/sortBy'
+import split from 'lodash/split'
 import moment from 'moment'
 import Helmet from 'react-helmet'
 import { prefixLink } from 'gatsby-helpers'
@@ -28,18 +29,34 @@ class SiteIndex extends React.Component {
                 const title = access(page, 'data.title') || page.path
                 const category = access(page, 'data.category')
                 const logo = access(page, 'data.logo')
+                const logoArray = split(logo, ',')
                 const postPath = access(page, 'data.path')
                 const bg = access(page, 'data.logoBG') || 'near-black'
+                let logos
+
+                if (logoArray.length > 1 ) {
+                    logos = new Set()
+                    logoArray.forEach((logo) => {
+                        logos.add(
+                            <img src={ postPath + logo } className={`db border-box w3 h3 w4-ns h4-ns relative br-100 bg-${ bg } ba bw4 b--${ bg }`} alt={`${ company } logo`} />
+                        )
+                    })
+                } else {
+                     logos = (
+                         <img src={ postPath + logoArray[0] } className={`dib border-box w3 h3 w4-ns h4-ns br-100 bg-${ bg } ba bw4 b--${ bg }`} alt={`${ company } logo`} />
+                     )
+                }
 
                 pageLinks.push(
                     <div className='project-timeline-block pb3 mb5 relative cf'>
                         <div className='project-timeline-block-brand absolute top-0 left-0'>
-                          <img src={ prefixLink(postPath + logo) } className={`dib border-box w3 h3 w4-ns h4-ns br-100 bg-${ bg } ba bw4 b--${ bg }`} alt={`${ company } logo`} />
+                            { logos }
                         </div>
                         <div className='fr w-100 lh-copy pl5 pl7-ns pr6-l relative'>
                             <h2 className='ma0 f4 f3-ns pl3 pl0-ns'><Link className='link green hover-navy' to={ prefixLink(page.path) } > { company }, <span className="fw4">{ period }</span> </Link></h2>
+                            <h3 className='ma0 fw4 i f5 f4-ns pl3 pl0-ns'>{ title }</h3>
                           <p className="f4-ns measure" dangerouslySetInnerHTML={ {    __html: description} } />
-                          <Link className='f4-ns i link green hover-navy bb' to={ prefixLink(page.path) }> Learn more
+                          <Link className='f4-ns i link green hover-navy bb' to={ prefixLink(page.path) }> Learn more &raquo;
                           </Link>
                         </div>
                     </div>
