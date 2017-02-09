@@ -14,7 +14,7 @@ class SiteNav extends React.Component {
                     </svg>
                 </Link>
               <div className='dtc v-mid w-75 tr'>
-                  <Link to={ prefixLink('#')} className='link hover-dark-blue green f6 f5-ns dib' title='Contact' activeClassName='current'>
+                  <Link to="&#109;ailto&#58;jo&#110;&#64;&#106;%6Fnh&#101;s&#108;op&#46;com" className='link hover-dark-blue green f6 f5-ns dib' title='Contact' activeClassName='current'>
                       Email me
                   </Link>
               </div>
@@ -22,7 +22,6 @@ class SiteNav extends React.Component {
             );
     }
 }
-
 SiteNav.propTypes = {
     location: React.PropTypes.object,
 }
