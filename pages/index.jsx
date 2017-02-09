@@ -33,17 +33,20 @@ class SiteIndex extends React.Component {
                 const postPath = access(page, 'data.path')
                 const bg = access(page, 'data.logoBG') || 'near-black'
                 let logos
+                let logosOffsetPadding
 
                 if (logoArray.length > 1 ) {
+                    logosOffsetPadding = 'pl3 pl0-ns'
                     logos = new Set()
                     logoArray.forEach((logo) => {
                         logos.add(
-                            <img src={ postPath + logo } className={`db border-box w3 h3 w4-ns h4-ns relative br-100 bg-${ bg } ba bw4 b--${ bg }`} alt={`${ company } logo`} />
+                            <img src={ postPath + logo } className={`db border-box w3 h3 w4-ns h4-ns relative br-100 bg-${ bg } ba bw3 bw4-ns b--${ bg }`} alt={`${ company } logo`} />
                         )
                     })
                 } else {
+                    logosOffsetPadding = ''
                      logos = (
-                         <img src={ postPath + logoArray[0] } className={`dib border-box w3 h3 w4-ns h4-ns br-100 bg-${ bg } ba bw4 b--${ bg }`} alt={`${ company } logo`} />
+                         <img src={ postPath + logoArray[0] } className={`dib border-box w3 h3 w4-ns h4-ns br-100 bg-${ bg } ba bw3 bw4-ns b--${ bg }`} alt={`${ company } logo`} />
                      )
                 }
 
@@ -55,7 +58,7 @@ class SiteIndex extends React.Component {
                         <div className='fr w-100 lh-copy pl5 pl7-ns pr6-l relative'>
                             <h2 className='ma0 f4 f3-ns pl3 pl0-ns'><Link className='link green hover-navy' to={ prefixLink(page.path) } > { company }, <span className="fw4">{ period }</span> </Link></h2>
                             <h3 className='ma0 fw4 i f5 f4-ns pl3 pl0-ns'>{ title }</h3>
-                          <p className="f4-ns measure" dangerouslySetInnerHTML={ {    __html: description} } />
+                          <p className={`f4-ns measure ${logosOffsetPadding}`} dangerouslySetInnerHTML={ {    __html: description} } />
                           <Link className='f4-ns i link green hover-navy bb' to={ prefixLink(page.path) }> Learn more &raquo;
                           </Link>
                         </div>
@@ -84,7 +87,7 @@ class SiteIndex extends React.Component {
                     ''
                 }
               <main role='main' className='ph3 ph5-ns cf'>
-                  <section className='project-timeline--brands relative pt5 mt5 pa3-ns mb6'>
+                  <section className='project-timeline--brands relative pt5 pt4-ns mt5 pa3-ns mb6'>
                     { pageLinks }
                   </section>
             </main>

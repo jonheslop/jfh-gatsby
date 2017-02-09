@@ -6,7 +6,7 @@ period: "2013 - 2016"
 path: "/rapha/"
 title: Front end developer and designer
 category: "Typography TESTS"
-description: "I joined Rapha as the first in-house developer and worked with a small team on a complete replatform moving the website, fulfilment and accounts on to Hybris. I was responsible for designing and building the front end of the&nbsp;website."
+description: "I joined Rapha as the first in-house developer and worked with a small team on a complete replatform moving the website, fulfilment and accounts on to Hybris. I was responsible for designing and building the front end of the&nbsp;website. I also worked with marketing on product releases and campaigns to produce exciting features using Wordpress."
 logo: "./rapha.svg"
 logoBG: "near-black"
 ---

@@ -6,13 +6,15 @@ period: "2008 - 2010"
 path: "/howies/"
 category: "FrontEnd"
 title: "Head of Web"
-description: "Civil society; save lives pathway to a better life public-private partnerships solution, tackle, protect UNHCR social movement Jane Addams sustainable campaign respond equality."
+description: "I landed a job with howies right out of university after a summer interning there the summer before. I bought a knowledge of the internet and social media to company and helped grow the online presence of the brand. Being a small company I also helped out with a lot of things to from helping produce photoshoots to design and content for the quarterly catalogues."
 logo: "./howies.svg"
 logoBG: "white"
 ---
 
-Wow! I love blogging so much already.
-
-Did you know that "despite its name, salted duck eggs can also be made from chicken eggs, though the taste and texture will be somewhat different, and the egg yolk will be less rich."? ([Wikipedia Link](http://en.wikipedia.org/wiki/Salted_duck_egg))
-
-Yeah, I didn't either.
+**Responsible for:**
+* Helped to grow the online presence of the brand, rebuilt the by the way blog, defined a content
+strategy to go along with, encouraging the team to blog as well.
+* Worked on catalogue shoot production, finding locations, brainstorming concepts and adventures.
+Also journeyed with the shoot crew taking photos, riding bikes and modelling.
+* Worked with the creative team on the content and design of the catalogues; choosing typefaces,
+photography, writing articles and commissioning illustrators.
