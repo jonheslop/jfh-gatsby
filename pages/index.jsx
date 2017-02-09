@@ -59,8 +59,7 @@ class SiteIndex extends React.Component {
                             <h2 className='ma0 f4 f3-ns pl3 pl0-ns'><Link className='link green hover-navy' to={ prefixLink(page.path) } > { company }, <span className="fw4">{ period }</span> </Link></h2>
                             <h3 className='ma0 fw4 i f5 f4-ns pl3 pl0-ns'>{ title }</h3>
                           <p className={`f4-ns measure ${logosOffsetPadding}`} dangerouslySetInnerHTML={ {    __html: description} } />
-                          <Link className='f4-ns i link green hover-navy bb' to={ prefixLink(page.path) }> Learn more &raquo;
-                          </Link>
+                          {/* <Link className='f4-ns i link green hover-navy bb' to={ prefixLink(page.path) }>Learn more &raquo;</Link> */}
                         </div>
                     </div>
                 )
