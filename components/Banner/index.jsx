@@ -11,7 +11,7 @@ class Banner extends React.Component {
               backgroundImage: 'url(' + jonheslop + ')',
               backgroundPosition: 'center center'
               }}>
-              <div className='dtc v-mid ph5'>
+              <div className='dtc v-mid ph3 ph5-ns pt5'>
                 <h1 className='f1 f-headline-l fw1 white-90 mw6'>{ config.siteHeadline }</h1>
                 <p className='ph0 mh0 measure-narrow f2 lh-copy i white-90'>
                     { config.siteDescr }

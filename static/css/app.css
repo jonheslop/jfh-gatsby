@@ -99,18 +99,8 @@
   box-shadow: 0 0 0 1px rgba(25,169,116,.2);
 }
 
-.project-timeline-block-brand img:nth-child(1) {
-    z-index: 3;
-}
-.project-timeline-block-brand img:nth-child(2) {
-    z-index: 2;
-}
-.project-timeline-block-brand img:nth-child(3) {
-    z-index: 1;
-}
-
 .project-timeline-block-brand img:nth-child(n+2) {
-    margin-top: -1.5em;
+    margin-top: 1rem;
 }
 
 .project-timeline-block-brand img:hover {
@@ -129,9 +119,6 @@
     left: 4rem;
   }
 
-  .project-timeline-block-brand img:nth-child(n+2) {
-      margin-top: -3em;
-  }
 }
 
 @media screen and (min-width: 60em) {

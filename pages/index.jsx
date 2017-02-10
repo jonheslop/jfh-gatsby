@@ -51,12 +51,12 @@ class SiteIndex extends React.Component {
                 }
 
                 pageLinks.push(
-                    <div className='project-timeline-block pb3 mb5 relative cf'>
+                    <div className='project-timeline-block pb3 mb6 relative cf'>
                         <div className='project-timeline-block-brand absolute top-0 left-0'>
                             { logos }
                         </div>
                         <div className='fr w-100 lh-copy pl5 pl7-ns pr6-l relative'>
-                            <h2 className='ma0 f4 f3-ns pl3 pl0-ns'><Link className='link green hover-navy' to={ prefixLink(page.path) } > { company }, <span className="fw4">{ period }</span> </Link></h2>
+                            <h2 className='ma0 f4 f3-ns pl3 pl0-ns'>{ company }, <span className="fw4">{ period }</span></h2>
                             <h3 className='ma0 fw4 i f5 f4-ns pl3 pl0-ns'>{ title }</h3>
                           <p className={`f4-ns measure ${logosOffsetPadding}`} dangerouslySetInnerHTML={ {    __html: description} } />
                           {/* <Link className='f4-ns i link green hover-navy bb' to={ prefixLink(page.path) }>Learn more &raquo;</Link> */}
@@ -86,7 +86,7 @@ class SiteIndex extends React.Component {
                     ''
                 }
               <main role='main' className='ph3 ph5-ns cf'>
-                  <section className='project-timeline--brands relative pt5 pt4-ns mt5 pa3-ns mb6'>
+                  <section className='project-timeline--brands relative pt5 pt4-ns mt3 pa3-ns mb6'>
                     { pageLinks }
                   </section>
             </main>
