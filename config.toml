@@ -7,4 +7,8 @@ siteURL = "https://jonheslop.github.io/jfh-gatsby/"
 
 googleAnalyticsId = "UA-3354664-1"
 
-linkPrefix = "/jfh-gatsby"
+linkPrefix = ""
+
+socialTwitterURL = "https://twitter.com/jonheslop"
+socialInstgramURL = "https://www.instagram.com/jonheslop/"
+socialLinkedInURL = "https://www.linkedin.com/in/jon-heslop-b13512b3/"
