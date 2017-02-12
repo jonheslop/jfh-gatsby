@@ -40,13 +40,13 @@ class SiteIndex extends React.Component {
                     logos = new Set()
                     logoArray.forEach((logo) => {
                         logos.add(
-                            <img src={ postPath + logo } className={`db border-box w3 h3 w4-ns h4-ns relative br-100 bg-${ bg } ba bw3 bw4-ns b--${ bg }`} alt={`${ company } logo`} />
+                            <img src={ prefixLink(postPath + logo) } className={`db border-box w3 h3 w4-ns h4-ns relative br-100 bg-${ bg } ba bw3 bw4-ns b--${ bg }`} alt={`${ company } logo`} />
                         )
                     })
                 } else {
                     textOffsetPadding = ''
                      logos = (
-                         <img src={ postPath + logoArray[0] } className={`dib border-box w3 h3 w4-ns h4-ns br-100 bg-${ bg } ba bw3 bw4-ns b--${ bg }`} alt={`${ company } logo`} />
+                         <img src={ prefixLink(postPath + logoArray[0]) } className={`dib border-box w3 h3 w4-ns h4-ns br-100 bg-${ bg } ba bw3 bw4-ns b--${ bg }`} alt={`${ company } logo`} />
                      )
                 }
 
