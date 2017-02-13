@@ -86,7 +86,7 @@ class SiteIndex extends React.Component {
                     ''
                 }
               <main role='main' className='ph3 ph5-l cf'>
-                  <section className='project-timeline--brands relative pt5 pt4-ns mt3 pa3-ns mb6'>
+                  <section className='project-timeline--brands relative pt5 pt4-ns mt3 pa3-ns mb5'>
                     { pageLinks }
                   </section>
             </main>
