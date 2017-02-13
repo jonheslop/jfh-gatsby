@@ -51,7 +51,7 @@ class SiteIndex extends React.Component {
                 }
 
                 pageLinks.push(
-                    <div className='project-timeline-block pb3 mb6 relative cf'>
+                    <div className='project-timeline-block pb3 mb5 relative cf'>
                         <div className='project-timeline-block-brand absolute top-0 left-0'>
                             { logos }
                         </div>

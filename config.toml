@@ -2,8 +2,8 @@ siteTitle = "Jon Heslop"
 siteHeadline = "I make things for the internet"
 siteDescr = "Jon Heslop is a designer & developer based in London."
 siteAuthor = "Jon Heslop"
-siteImage = "https://jonheslop.github.io/jfh-gatsby/jon-heslop-face-square.jpg"
-siteURL = "https://jonheslop.github.io/jfh-gatsby/"
+siteImage = "http://jonheslop.com/jon-heslop-face-square.jpg"
+siteURL = "http://jonheslop.com/"
 
 googleAnalyticsId = "UA-3354664-1"
 
