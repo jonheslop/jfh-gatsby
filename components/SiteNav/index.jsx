@@ -14,7 +14,7 @@ class SiteNav extends React.Component {
                     </svg>
                 </Link>
               <div className='dtc v-mid w-75 tr'>
-                  <Link to="mailto:jon@jonheslop.com" className='link washed-blue underline-hover f5 f5-ns dib' title='Contact' activeClassName='current'>
+                  <Link to="mailto:jon@jonheslop.com" target="_blank" className='link washed-blue underline-hover f5 f5-ns dib' title='Contact' activeClassName='current'>
                       Say hello
                   </Link>
               </div>
