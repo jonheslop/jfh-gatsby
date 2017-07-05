@@ -29,6 +29,7 @@ class SiteIndex extends React.Component {
                 const title = access(page, 'data.title') || page.path
                 const category = access(page, 'data.category')
                 const logo = access(page, 'data.logo')
+                const logoPad = access(page, 'data.logoPad')
                 const logoArray = split(logo, ',')
                 const postPath = access(page, 'data.path')
                 const bg = access(page, 'data.logoBG') || 'near-black'
@@ -40,13 +41,13 @@ class SiteIndex extends React.Component {
                     logos = new Set()
                     logoArray.forEach((logo) => {
                         logos.add(
-                            <img src={ prefixLink(postPath + logo) } className={`db border-box w3 h3 w4-ns h4-ns relative br-100 bg-${ bg } ba bw3 bw4-ns b--${ bg }`} alt={`${ company } logo`} />
+                            <img src={ prefixLink(postPath + logo) } className={`db border-box w3 h3 w4-ns h4-ns relative br-100 bg-${ bg } ba bw3 bw4-ns b--${ bg }`} alt={`${ company } logo`} style={{padding: logoPad}} />
                         )
                     })
                 } else {
                     textOffsetPadding = ''
                      logos = (
-                         <img src={ prefixLink(postPath + logoArray[0]) } className={`dib border-box w3 h3 w4-ns h4-ns br-100 bg-${ bg } ba bw3 bw4-ns b--${ bg }`} alt={`${ company } logo`} />
+                         <img src={ prefixLink(postPath + logoArray[0]) } className={`dib border-box w3 h3 w4-ns h4-ns br-100 bg-${ bg } ba bw3 bw4-ns b--${ bg }`} alt={`${ company } logo`} style={{padding: logoPad}} />
                      )
                 }
 
@@ -58,7 +59,7 @@ class SiteIndex extends React.Component {
                         <div className='fr w-100 lh-copy pl5 pl7-ns pr6-l relative'>
                             <h2 className='ma0 f4 f3-ns pl3 pl0-ns'>{ company }, <span className="fw4">{ period }</span></h2>
                             <h3 className='ma0 fw4 i f5 f4-ns pl3 pl0-ns'>{ title }</h3>
-                          <p className={`f4-ns measure ${textOffsetPadding}`} dangerouslySetInnerHTML={ {    __html: description} } />
+                            <p className={`f4-ns measure paragraph-links ${textOffsetPadding}`} dangerouslySetInnerHTML={ {    __html: description} } />
                           {/* <Link className='f4-ns i link green hover-navy bb' to={ prefixLink(page.path) }>Learn more &raquo;</Link> */}
                         </div>
                     </div>
